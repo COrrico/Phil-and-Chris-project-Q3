@@ -24,7 +24,8 @@ Html/CSS/Java script -->
 				var type = prompt("Is this a motorcycle or a car")
 				
 								
-						   }
+			 
+							
 					if( type == "car")
 						{
 						 	var car = {
@@ -37,6 +38,8 @@ Html/CSS/Java script -->
 						 
 						
 						}
+						
+						
 					
 				
 		
