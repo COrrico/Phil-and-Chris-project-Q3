@@ -1,1 +1,37 @@
+<!--Name: Philip Ayoub    
+Class: Java Script Programming 
+Date : 10/9/15 
+Javascript project 3  
+Html/CSS/Java script --> 
 
+<html>
+  <head>
+  <style type="text/css">            
+	
+			body { 	  
+ 		  			font-size: 2.5em;
+ 		  			font-family: serif;
+	      			background-color:	blue;         
+	      			color: white;   
+	      			padding: 5%;
+	      			text-align:center;
+	    		 } 
+	    		 
+		</style> 
+	</head>
+	<body>
+		<script>
+					var car1 = prompt("What 
+					var car = {
+								this.mileage;
+								this.color;      
+								
+							  }
+					var car1 = new car;
+		
+		
+		
+		
+		</script>   
+	</body>
+</html>   
