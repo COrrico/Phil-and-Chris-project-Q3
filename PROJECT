@@ -9,7 +9,7 @@ Html/CSS/Java script -->
   <style type="text/css">            
 	
 			body { 	  
- 		  			font-size: 2.5em;
+ 		  			font-size: 2.5em;     
  		  			font-family: serif;
 	      			background-color:	blue;         
 	      			color: white;   
@@ -23,42 +23,46 @@ Html/CSS/Java script -->
 				<button onclick="start()"> Presh to input a car </button>
 		<script>
 				var type = prompt("Is this a motorcycle or a car")
+				var inventory =[];
 				
 			
 				
 								
+			 //Add cars to Array
 			 
 				funciton start()
 					{
-					if( type == "car")
+					if( type == "car")   
 						{
 						
-						funcition car(mileage, color) = {     
+						function car(mileage, color) = {          
 							this.mileage;  
 							this.color;      
 							}
 						var mileage1 = prompt("What is the mileage of the car?")
 						var color1 = prompt("What is the color of the car?")
 						
-						var car1 = new car(mileage1,color1)	
+						var car = new car(mileage1,color1)	
 						
-								
+						var inventory += car;		
 						}
 						
 					else if(type == "motorcycle")
 						{
-						   funcition motocycle(mileage, color) = {
+						   function motocycle(mileage, color) = {
 							this.mileage;  
 							this.color; 
 							}   	
-						var mileage1 = prompt("What is the mileage of the car?")
+						var mileage1 = prompt("What is the mileage of the car?") 
 						var color1 = prompt("What is the color of the car?")
 						
 						var motocycle = new motocycle(mileage1,color1)	
-						    
+						
+						var inventory += motocycle;
+						
 						}
 					}
-	
+			//search for cars.
 			
 		</script>   
 		
