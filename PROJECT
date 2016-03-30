@@ -11,7 +11,7 @@ Html/CSS/Java script -->
 			body { 	  
  		  			font-size: 2.5em;     
  		  			font-family: serif;
-	      			background-color:	blue;         
+	      			background-color:	blue;                              
 	      			color: white;   
 	      			padding: 5%;
 	      			text-align:center;
@@ -21,8 +21,9 @@ Html/CSS/Java script -->
 	</head>
 	<body>
 				<button onclick="start()"> Presh to input a car </button>
-		<script>
-				var type = prompt("Is this a motorcycle or a car")
+				<button onclick="search()"> Presh to search for a car in our inevntory. </button>
+		<script>       
+				
 				var inventory =[];
 				
 			
@@ -31,6 +32,7 @@ Html/CSS/Java script -->
 			 //Add cars to Array
 			 
 				funciton start()
+				var type = prompt("Is this a motorcycle or a car")
 					{
 					if( type == "car")   
 						{
@@ -39,12 +41,12 @@ Html/CSS/Java script -->
 							this.mileage;  
 							this.color;      
 							}
-						var mileage1 = prompt("What is the mileage of the car?")
+						var mileage1 = prompt("What is the mileage of the car?")       
 						var color1 = prompt("What is the color of the car?")
 						
 						var car = new car(mileage1,color1)	
 						
-						var inventory += car;		
+						  inventory += car;		
 						}
 						
 					else if(type == "motorcycle")
@@ -53,16 +55,39 @@ Html/CSS/Java script -->
 							this.mileage;  
 							this.color; 
 							}   	
-						var mileage1 = prompt("What is the mileage of the car?") 
-						var color1 = prompt("What is the color of the car?")
+						var mileage2 = prompt("What is the mileage of the car?") 
+						var color2 = prompt("What is the color of the car?")
 						
-						var motocycle = new motocycle(mileage1,color1)	
+						var motocycle = new motocycle(mileage2,color2)	
 						
-						var inventory += motocycle;
+						 inventory += motocycle;    
 						
 						}
 					}
 			//search for cars.
+			
+			function search(){
+			
+			var trait = prompt("what color car do you want?)
+			var traitFound = false;	
+				for( var i; inventory < i; i++)
+					{
+						if(inventory[i].color == trait)
+							{
+								console.log(inventory[i]);   
+								var traitFound = true;
+							}
+					
+					}
+				
+				if(traitFound != true)
+					{
+						console.log("We did not find a car in our iventory with that trait.")
+					}
+					
+			};
+		 
+			
 			
 		</script>   
 		
