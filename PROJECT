@@ -20,31 +20,48 @@ Html/CSS/Java script -->
 		</style> 
 	</head>
 	<body>
+				<button onclick="start()"> Presh to input a car </button>
 		<script>
 				var type = prompt("Is this a motorcycle or a car")
 				
+			
+				
 								
 			 
-							
+				funciton start()
+					{
 					if( type == "car")
 						{
-						 	var car = {
+						
+						funcition car(mileage, color) = {     
 							this.mileage;  
 							this.color;      
+							}
+						var mileage1 = prompt("What is the mileage of the car?")
+						var color1 = prompt("What is the color of the car?")
 						
+						var car1 = new car(mileage1,color1)	
+						
+								
 						}
+						
 					else if(type == "motorcycle")
 						{
-						 
+						   funcition motocycle(mileage, color) = {
+							this.mileage;  
+							this.color; 
+							}   	
+						var mileage1 = prompt("What is the mileage of the car?")
+						var color1 = prompt("What is the color of the car?")
 						
+						var motocycle = new motocycle(mileage1,color1)	
+						    
 						}
-						
-						
-					
-				
-		
-		
-		
+					}
+	
+			
 		</script>   
+		
 	</body>
 </html>   
+
