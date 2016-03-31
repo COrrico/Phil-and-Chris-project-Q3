@@ -1,4 +1,3 @@
-
 Class: Java Script Programming 
 Date : 3/28/16 
 Javascript project   
@@ -31,44 +30,49 @@ Html/CSS/Java script -->
 								
 			 //Add cars to Array
 			 
-				funciton start()
-				var type = prompt("Is this a motorcycle or a car")
-					{
+				function start()
+				
+					{    
+					var type = prompt("Is this a motorcycle or a car")
+					
 					if( type == "car")   
 						{
 						
-						function car(mileage, color) = {          
+						function car(mileage,color) {
 							this.mileage;  
-							this.color;      
+							this.color;    
+							  
 							}
 						var mileage1 = prompt("What is the mileage of the car?")       
 						var color1 = prompt("What is the color of the car?")
 						
-						var car = new car(mileage1,color1)	
+						var car1 = new car(mileage1,color1)	
 						
 						  inventory += car;		
 						}
 						
 					else if(type == "motorcycle")
 						{
-						   function motocycle(mileage, color) = {
+						   function motocycle(mileage, color) {
 							this.mileage;  
 							this.color; 
 							}   	
 						var mileage2 = prompt("What is the mileage of the car?") 
 						var color2 = prompt("What is the color of the car?")
 						
-						var motocycle = new motocycle(mileage2,color2)	
+						var motocycle1 = new motocycle(mileage2,color2)	
 						
 						 inventory += motocycle;    
 						
 						}
 					}
+					
+					console.log(inventory)
 			//search for cars.
 			
 			function search(){
 			
-			var trait = prompt("what color car do you want?)
+			var trait = prompt("what color car do you want?")
 			var traitFound = false;	
 				for( var i; inventory < i; i++)
 					{
@@ -93,5 +97,3 @@ Html/CSS/Java script -->
 		
 	</body>
 </html>   
-
-
