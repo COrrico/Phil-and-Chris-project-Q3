@@ -70,7 +70,7 @@ Html/CSS/Java script -->
 						 inventory.push(motocycle1)
 						
 						}
-					}
+					}      	
 					
 					
 			//search for cars.
@@ -103,8 +103,13 @@ Html/CSS/Java script -->
 					
 			};
 		 
+			car2 = new Car("19,000","red")	
+			Motocycle2 = new Motocylce("5,000","black")	
 			
-			
+
+									 inventory.push(car2)
+									 inventory.push(Motocycle2)
+
 		</script>   
 		
 	</body>
