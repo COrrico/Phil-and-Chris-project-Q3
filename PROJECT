@@ -80,7 +80,7 @@ Html/CSS/Java script -->
 			
 						 
 			var trait = prompt("what color car do you want?")
-			var traitFound = false;	
+			var traitFound = false;	  
 									console.log(inventory.length)     
 
 				for(var i = 0; inventory.length > i; i++) 
