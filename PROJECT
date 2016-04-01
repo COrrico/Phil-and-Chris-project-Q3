@@ -1,14 +1,9 @@
-<!-- Class: Java Script Programming 
-Date : 3/28/16 
-Javascript project   
-Html/CSS/Java script --> 
-
 <html>
   <head>
 
   <style type="text/css">            
 
-			h1   {color:white;}
+			header   {color:black;}
 			body { 	  
  		  			font-size: 2.5em;     
  		  			font-family: serif;
@@ -20,8 +15,8 @@ Html/CSS/Java script -->
 	    		 
 		</style> 
 	</head>
-	<body>
-			<h1> Used Cars for $ale</h1>
+	<body background = " http://images.cdn.stuff.tv/sites/stuff.tv/files/styles/big-image/public/brands/Cars/delorean-dmc12.jpg?itok=fVYa5tsJ">
+			<header> Used Cars for $ale</header>
 			
 				<button onclick="start()"> Presh to input a car </button>
 				<button onclick="search()"> Presh to search for a car in our inevntory. </button>
