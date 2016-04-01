@@ -5,8 +5,10 @@ Html/CSS/Java script -->
 
 <html>
   <head>
+
   <style type="text/css">            
-	
+
+			h1   {color:white;}
 			body { 	  
  		  			font-size: 2.5em;     
  		  			font-family: serif;
@@ -19,6 +21,8 @@ Html/CSS/Java script -->
 		</style> 
 	</head>
 	<body>
+			<h1> Used Cars for $ale</h1>
+			
 				<button onclick="start()"> Presh to input a car </button>
 				<button onclick="search()"> Presh to search for a car in our inevntory. </button>
 		<script>       
