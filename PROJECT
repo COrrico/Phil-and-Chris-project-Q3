@@ -20,6 +20,7 @@
 			<hr>
 				<button onclick="start()"> Presh to input a car </button>
 				<button onclick="search()"> Presh to search for a car in our inevntory. </button>
+<p font-color="red" id="searchResult"> </p>
 		<script>       
 				
 				var inventory = [];
@@ -92,12 +93,13 @@
 								console.log(inventory[i]);   
 								var traitFound = true;
 							}
-						document.write(inventory[i].color)
+						//document.write(inventory[i].color)
+document.getElementById("searchResult").innerHTML="Hey we found your dream car! "+inventory[i].color+" "+inventory[i].mileage;
 					}
 				
 				if(traitFound != true)
 					{
-						alert("We did not find a car in our iventory with that trait.")     
+						document.getElementById("searchResult").innerHTML="We did not find a car in our iventory with that trait.";     
 					}
 					
 			};
