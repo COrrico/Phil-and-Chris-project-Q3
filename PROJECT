@@ -92,7 +92,7 @@
 								console.log(inventory[i]);   
 								var traitFound = true;
 							}
-						console.log(inventory[i].color)
+						document.write(inventory[i].color)
 					}
 				
 				if(traitFound != true)
