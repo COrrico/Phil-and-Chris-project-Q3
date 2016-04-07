@@ -18,9 +18,9 @@
 	<body background = " http://wallpaper.pickywallpapers.com/1600x900/yellow-ferrari-enzo-edo-competition.jpg">
 			<header> Used Cars for $ale</header>
 			<hr>
-				<button onclick="start()"> Press to input a car </button>
-				<button onclick="search()"> Press to search for a car in our inevntory. </button>
-				<button onclick="printInventory()"> Press to print all our inventory. </button>
+				<button onclick="start()"> Press to input a car or Motorcycle </button>
+				<button onclick="search()"> Press to search for a car/Motorcycle in our inventory. </button>
+				<button onclick="printInventory()"> Press to see all the cars in our inventory. </button>
 <p font-color="red" id="searchResult"> </p>
 		<script>       
 				
@@ -45,7 +45,18 @@
 				function start()
 				
 					{    
-					var type = prompt("Is this a motorcycle or a car")
+					var type = prompt("Is this vehicle you would like to sell a motorcycle or a car")
+					
+					
+						
+							if((type != "car") || (type != "motorcycle"))    
+									{
+										type = prompt("That was not a valid response:  Is this vehicle you would like to sell a motorcycle or a car")
+									}
+									
+								
+								
+						
 					
 					if( type == "car")   
 						{
@@ -62,8 +73,8 @@
 						{
 						  
 							    
-						var mileage2 = prompt("What is the mileage of the car?") 
-						var color2 = prompt("What is the color of the car?")
+						var mileage2 = prompt("What is the mileage of the motorcycle?") 
+						var color2 = prompt("What is the color of the motorcycle?")
 						
 						var motocycle1 = new Motocycle(mileage2,color2)	     
 						
@@ -79,7 +90,7 @@
 			function search(){     
 			
 						 
-			var trait = prompt("what color car do you want?")    
+			var trait = prompt("what color car/motorcycle do you want?")    
 			var traitFound = false;	  
 
 				for(var i = 0; inventory.length > i; i++) 
@@ -92,14 +103,14 @@
 								console.log(inventory[i]);   
 								var traitFound = true;
 								
-								document.getElementById("searchResult").innerHTML="Hey we found your dream car! "+inventory[i].color+" "+inventory[i].mileage;
-							}
+								document.getElementById("searchResult").innerHTML="Hey we found your dream car(s)/motorcycle(s)! "+inventory[i].color+" "+inventory[i].mileage;
+							}    
 
 					}
 				
 				if(traitFound != true)
 					{
-						document.getElementById("searchResult").innerHTML="We did not find a car in our iventory with that trait.";     
+						document.getElementById("searchResult").innerHTML="We did not find a car/motorcycle in our inventory with that trait.";     
 					}
 					
 			};
