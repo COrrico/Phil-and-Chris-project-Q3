@@ -37,6 +37,7 @@
 							this.mileage = mileage;  
 							this.color = color; 
 							}   	
+			
 				
 								
 			 //Add cars to Array
@@ -78,7 +79,7 @@
 			function search(){     
 			
 						 
-			var trait = prompt("what color car do you want?")
+			var trait = prompt("what color car do you want?")    
 			var traitFound = false;	  
 
 				for(var i = 0; inventory.length > i; i++) 
@@ -90,9 +91,10 @@
 							{
 								console.log(inventory[i]);   
 								var traitFound = true;
+								
+								document.getElementById("searchResult").innerHTML="Hey we found your dream car! "+inventory[i].color+" "+inventory[i].mileage;
 							}
-						//document.write(inventory[i].color)
-document.getElementById("searchResult").innerHTML="Hey we found your dream car! "+inventory[i].color+" "+inventory[i].mileage;
+
 					}
 				
 				if(traitFound != true)
@@ -102,12 +104,8 @@ document.getElementById("searchResult").innerHTML="Hey we found your dream car! 
 					
 			};
 		 
-			car2 = new Car("19,000","red")	
-			Motocycle2 = new Motocycle("5,000","black")	
-			
-
-									 inventory.push(car2)
-									 inventory.push(Motocycle2)
+		 
+		 
 
 					//Prints inventory
 			
@@ -115,7 +113,7 @@ document.getElementById("searchResult").innerHTML="Hey we found your dream car! 
 			
 							for(var i = 0; inventory.length > i; i++) 
 								{
-									console.log(inventory[i].mileage,"     ",  inventory[i].color)
+									console.log(inventory[i])
 								}
 			
 			
@@ -132,4 +130,3 @@ document.getElementById("searchResult").innerHTML="Hey we found your dream car! 
 		</script>   
 		
 	</body>
-</html>   
