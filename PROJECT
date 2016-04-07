@@ -3,19 +3,19 @@
 
   <style type="text/css">            
 
-			header   {color:black;}
+			header   {color:White;}
 			body { 	  
  		  			font-size: 2.5em;     
  		  			font-family: serif;
 	      			background-color:	blue;                              
-	      			color: white;   
+	      			color: Red;   
 	      			padding: 5%;
 	      			text-align:center;
 	    		 } 
 	    		 
 		</style> 
 	</head>
-	<body background = " http://images.cdn.stuff.tv/sites/stuff.tv/files/styles/big-image/public/brands/Cars/delorean-dmc12.jpg?itok=fVYa5tsJ">
+	<body background = " http://wallpaper.pickywallpapers.com/1600x900/yellow-ferrari-enzo-edo-competition.jpg">
 			<header> Used Cars for $ale</header>
 			<hr>
 				<button onclick="start()"> Press to input a car </button>
@@ -37,7 +37,6 @@
 							this.mileage = mileage;  
 							this.color = color; 
 							}   	
-			
 				
 								
 			 //Add cars to Array
