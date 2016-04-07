@@ -20,8 +20,8 @@
 			<hr>
 				<button onclick="start()"> Press to input a car </button>
 				<button onclick="search()"> Press to search for a car in our inevntory. </button>
-
-<div style="width:500px;height:100px;border:1px solid white;"><p font-color="red" id="searchResult"> </p> </div>
+				<button onclick="printInventory()"> Press to print all our inventory. </button>
+<p font-color="red" id="searchResult"> </p>
 		<script>       
 				
 				var inventory = [];
@@ -56,8 +56,7 @@
 						 car1 = new Car(mileage1,color1)	
 						
 						  inventory.push(car1)
-						  console.log(inventory[0])
-						}
+ 						}
 						
 					else if(type == "motorcycle")
 						{
@@ -82,12 +81,11 @@
 						 
 			var trait = prompt("what color car do you want?")
 			var traitFound = false;	  
-									console.log(inventory.length)     
 
 				for(var i = 0; inventory.length > i; i++) 
 					{
 					
-						console.log(inventory[i].color)    
+				 
 						
 						if(inventory[i].color == trait)
 							{
@@ -106,12 +104,32 @@ document.getElementById("searchResult").innerHTML="Hey we found your dream car! 
 			};
 		 
 			car2 = new Car("19,000","red")	
-			Motocycle2 = new Motocylce("5,000","black")	
+			Motocycle2 = new Motocycle("5,000","black")	
 			
 
 									 inventory.push(car2)
 									 inventory.push(Motocycle2)
 
+					//Prints inventory
+			
+			function printInventory(){
+			
+							for(var i = 0; inventory.length > i; i++) 
+								{
+									console.log(inventory[i].mileage,"     ",  inventory[i].color)
+								}
+			
+			
+			
+			
+			} 
+		 
+			car2 = new Car("19,000","red")	
+			motocycle2 = new Motocycle("5,000","black")	
+			
+
+									 inventory.push(car2)
+									 inventory.push(motocycle2) 
 		</script>   
 		
 	</body>
