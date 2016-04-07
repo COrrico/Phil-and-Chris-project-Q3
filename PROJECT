@@ -18,8 +18,8 @@
 	<body background = " http://images.cdn.stuff.tv/sites/stuff.tv/files/styles/big-image/public/brands/Cars/delorean-dmc12.jpg?itok=fVYa5tsJ">
 			<header> Used Cars for $ale</header>
 			<hr>
-				<button onclick="start()"> Presh to input a car </button>
-				<button onclick="search()"> Presh to search for a car in our inevntory. </button>
+				<button onclick="start()"> Press to input a car </button>
+				<button onclick="search()"> Press to search for a car in our inevntory. </button>
 <p font-color="red" id="searchResult"> </p>
 		<script>       
 				
