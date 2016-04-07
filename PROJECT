@@ -111,6 +111,26 @@ document.getElementById("searchResult").innerHTML="Hey we found your dream car! 
 									 inventory.push(car2)
 									 inventory.push(Motocycle2)
 
+					//Prints inventory
+			
+			function printInventory(){
+			
+							for(var i = 0; inventory.length > i; i++) 
+								{
+									console.log(inventory[i].mileage,"     ",  inventory[i].color)
+								}
+			
+			
+			
+			
+			} 
+		 
+			car2 = new Car("19,000","red")	
+			motocycle2 = new Motocycle("5,000","black")	
+			
+
+									 inventory.push(car2)
+									 inventory.push(motocycle2) 
 		</script>   
 		
 	</body>
