@@ -20,6 +20,7 @@
 			<hr>
 				<button onclick="start()"> Press to input a car </button>
 				<button onclick="search()"> Press to search for a car in our inevntory. </button>
+				<button onclick="printInventory()"> Press to print all our inventory. </button>
 <p font-color="red" id="searchResult"> </p>
 		<script>       
 				
