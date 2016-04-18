@@ -1,4 +1,4 @@
-<html>
+html>
   <head>
 
   <style type="text/css">            
@@ -15,7 +15,7 @@
 	    		 
 		</style> 
 	</head>
-	<body background = " http://www.autospies.com/images/users/Agent00R/main/lamborghini-gallardo-lp570-4-blancpain-edition-1.jpg">
+	<body background = " http://www.autospies.com/images/users/Agent00R/main/lamborghini-gallardo-lp570-4-blancpain-edition-1.jpg"> 
 			<header> Used Cars for $ale</header>
 			<hr>
 				<button onclick="start()"> Press to input a car or Motorcycle </button>
@@ -27,12 +27,14 @@
 				var inventory = [];
 				
 					
-						function Car(mileage,color,type) {
+						function Car(mileage,color,type) {     
 							this.mileage = mileage;  
 							this.color = color;
 							this.type = type;    
 							  
 							}
+							
+							Car.prototype.wheels = 4;
 							
 						 function Motocycle(mileage, color,type) {
 							this.mileage = mileage;  
@@ -40,8 +42,8 @@
 							this.type = type;    
 							
 							}   	
-			
 				
+						Motocycle.prototype.wheels = 2;
 								
 			 //Add cars to Array
 			 
@@ -99,7 +101,7 @@
 								console.log(inventory[i]);   
 								var traitFound = true;
 								
-								document.getElementById("searchResult").innerHTML="Hey we found your dream car(s)/motorcycle(s)! "+ "The type is "+inventory[i].type+", "+ "the color is" +" "+  inventory[i].color+" "+"and the milage is"+" "+inventory[i].mileage;
+								document.getElementById("searchResult").innerHTML="Hey we found your dream car(s)/motorcycle(s)! "+ "The type is "+inventory[i].type+", "+ "the color is" +" "+  inventory[i].color+" "+"and the milage is"+" "+inventory[i].mileage+" and the number of wheels is "+inventory[i].wheels;
 							}    
 
 					}
@@ -137,3 +139,4 @@
 		</script>   
 		
 	</body>
+	
