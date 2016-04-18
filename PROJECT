@@ -8,14 +8,14 @@
  		  			font-size: 2.5em;     
  		  			font-family: serif;
 	      			background-color:	blue;                              
-	      			color: Red;   
+	      			color: white;   
 	      			padding: 5%;
 	      			text-align:center;
 	    		 } 
 	    		 
 		</style> 
 	</head>
-	<body background = " http://wallpaper.pickywallpapers.com/1600x900/yellow-ferrari-enzo-edo-competition.jpg">
+	<body background = " http://www.autospies.com/images/users/Agent00R/main/lamborghini-gallardo-lp570-4-blancpain-edition-1.jpg">
 			<header> Used Cars for $ale</header>
 			<hr>
 				<button onclick="start()"> Press to input a car or Motorcycle </button>
@@ -27,15 +27,18 @@
 				var inventory = [];
 				
 					
-						function Car(mileage,color) {
+						function Car(mileage,color,type) {
 							this.mileage = mileage;  
-							this.color = color;    
+							this.color = color;
+							this.type = type;    
 							  
 							}
 							
-						 function Motocycle(mileage, color) {
+						 function Motocycle(mileage, color,type) {
 							this.mileage = mileage;  
 							this.color = color; 
+							this.type = type;    
+							
 							}   	
 			
 				
@@ -48,23 +51,15 @@
 					var type = prompt("Is this vehicle you would like to sell a motorcycle or a car")
 					
 					
-						
-							if((type != "car") || (type != "motorcycle"))    
-									{
-										type = prompt("That was not a valid response:  Is this vehicle you would like to sell a motorcycle or a car")
-									}
-									
-								
-								
-						
-					
+					 
 					if( type == "car")   
 						{
 					
 						var mileage1 = prompt("What is the mileage of the car?")       
 						var color1 = prompt("What is the color of the car?")
 						
-						 car1 = new Car(mileage1,color1)	
+						
+						 car1 = new Car(mileage1,color1,type)	
 						
 						  inventory.push(car1)
  						}
@@ -76,7 +71,8 @@
 						var mileage2 = prompt("What is the mileage of the motorcycle?") 
 						var color2 = prompt("What is the color of the motorcycle?")
 						
-						var motocycle1 = new Motocycle(mileage2,color2)	     
+						
+						var motocycle1 = new Motocycle(mileage2,color2,type)	     
 						
 						 inventory.push(motocycle1)
 						
@@ -103,7 +99,7 @@
 								console.log(inventory[i]);   
 								var traitFound = true;
 								
-								document.getElementById("searchResult").innerHTML="Hey we found your dream car(s)/motorcycle(s)! "+inventory[i].color+" "+inventory[i].mileage;
+								document.getElementById("searchResult").innerHTML="Hey we found your dream car(s)/motorcycle(s)! "+ "The type is "+inventory[i].type+", "+ "the color is" +" "+  inventory[i].color+" "+"and the milage is"+" "+inventory[i].mileage;
 							}    
 
 					}
@@ -132,8 +128,8 @@
 			
 			} 
 		 
-			car2 = new Car("19,000","red")	
-			motocycle2 = new Motocycle("5,000","black")	
+			car2 = new Car("19,000","red","car")	
+			motocycle2 = new Motocycle("5,000","black","Motocycle")	
 			
 
 									 inventory.push(car2)
