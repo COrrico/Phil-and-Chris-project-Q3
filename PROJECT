@@ -123,7 +123,7 @@
 			
 							for(var i = 0; inventory.length > i; i++) 
 								{
-									document.getElementById("inventory1").innerHTML += "Type:" + inventory[i].type + "Color:" + inventory[i].color + " Milage:" +inventory[i].mileage + " Number of wheels" + inventory[i].wheels;
+									document.getElementById("inventory1").innerHTML += "Type:" + inventory[i].type + " " + "Color:" + inventory[i].color + " " + " Milage:" +inventory[i].mileage + " " + " Number of wheels" + inventory[i].wheels;
 								}
 			
 			
