@@ -1,4 +1,4 @@
-html>
+<html>
   <head>
 
   <style type="text/css">            
@@ -22,7 +22,7 @@ html>
 				<button onclick="search()"> Press to search for a car/Motorcycle in our inventory. </button>
 				<button onclick="printInventory()"> Press to see all the cars in our inventory. </button>
 <p font-color="red" id="searchResult"> </p>
-		<p font-color="red" id="inventory1"> </p>
+		<p font-color= id="inventory1"> </p>
 		<script>       
 				
 				var inventory = [];
@@ -123,7 +123,7 @@ html>
 			
 							for(var i = 0; inventory.length > i; i++) 
 								{
-									console.log(inventory[i])
+									document.getElementById("inventory1").innerHTML="Here is our inventory!";
 								}
 			
 			
