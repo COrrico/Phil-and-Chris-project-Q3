@@ -1,1 +1,116 @@
+<html> 
+	<head>
+		<style type="text/css">          
+	
+			body { 	  
+ 		  			font-size: 2.5em;
+ 		  			font-family: serif;
+	      			background-color: blue; 
+	      			color: white;
+	      			padding: 5%;
+	      			text-align:center;
+	      		 			
+	    		 }
+	    		 
+	    aside { 
+ 		float: right;
+ 		margin-bottom: 40%
+ 		}
+ 		
+ 		
+ 		
+            aside a {
+		     	
+	        color: black;
+	        font-size: 1.9em;
+	        text-decoration: none;
+	        float: top;
+	        vertical-align: straight;
+	        margin-top: 10%;
+	        vertical-align: center;
+	       text-align: right;
+	       padding: 5%;
+	        font-size:  1.7em;
+	         text-align: justify;
+	
+				
+		}
+	
+			aside a:hover { background: white;
+			 				border-radius: 30px;
+				  
+				}
+	    
+		</style>  
+			 <!--Load the AJAX API-->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
 
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();  
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Senoirs', 50], //My info from the google forms.
+          ['Juniors', 20],
+          ['Sophomores', 20],  
+          ['Freshman', 10],
+               
+        ]);
+
+        // These are the options I chose.        
+        var options = {'title':'Model UN Grade percantages',  
+                       'width':800,
+                       'height':500,
+                       'colors': ['#FF68DD', '#59DF00', '#DFA800', '#F70000', '#C0F7FE','#0066FF', '#F7DE00', '#00FFFF'], 
+                       'pieHole': 0.4,
+                       'pieSliceTextStyle': {
+            									color: 'black', 
+          									},
+          				
+          					    
+          				'backgroundColor': 'blue',	
+          				'legend': {position: 'top', textStyle: {color: 'white', fontSize: 17}},     
+          				'titleTextStyle': {color: '#FFFFFF',
+							fontSize: '30',          									},	
+
+                       };
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));    
+        chart.draw(data, options);
+      }
+    </script>    
+	</head>    
+		<body>
+	
+     <div id="chart_div"></div>
+  
+ 			 <aside>
+		
+				<a href = "PJAQ4aboutus.html">About Us.</a> 
+				<a href = "PJAQ3Google1.html">About Us.</a> 
+				<a href = "PJAQ3Google1.html">About Us.</a> 
+				<a href = "PJAQ3Google1.html">About Us.</a> 
+	
+			</aside>
+  
+  
+  
+  </body>
+  
+  </html>  
+    
+    
+    
